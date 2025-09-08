@@ -1,0 +1,352 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import CVPhoto from '../assets/CVFOTO.webp';
+---
+
+<Layout>
+  <main class="container mx-auto px-4 py-8 max-w-4xl">
+    <div class="cv-header mb-8 grid grid-cols-[200px_1fr] gap-6 items-center">
+      <div class="profile-image-container">
+        <div class="profile-image-placeholder">
+          <Image src={CVPhoto} alt="Profile Picture" class="w-full h-full object-cover rounded-md" />
+        </div>
+      </div>
+      <div class="text-left">
+        <h1 class="text-4xl font-bold mb-2">Gerardo Flores Cabrera</h1>
+        <p class="text-lg text-gray-600">
+          Bajada Sauce #137 Col. Sauce, Tampico, Tamaulipas, 89240<br/>
+          Telefono: (833) 344-3634 | Email: gerardo.flores.c03@gmail.com<br/>
+          LinkedIn: --------
+        </p>
+      </div>
+    </div>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold border-b-2 border-gray-300 mb-4">Education</h2>
+      <div class="mb-4">
+        <div class="flex justify-between">
+          <h3 class="font-semibold">Universidad Autonoma de Tamaulipas</h3>
+          <span>Tampico, TAMPS</span>
+        </div>
+        <div class="flex justify-between text-gray-600">
+          <p>Ingenieria en Sistemas Computacionales</p>
+          <p>Mayo 2027</p>
+        </div>
+        <ul class="list-disc ml-5 mt-2">
+          <li>GPA: 8.53/10.00</li>
+        </ul>
+      </div>
+
+	  <div class="mb-4">
+        <div class="flex justify-between">
+          <h3 class="font-semibold">Instituto de Estudios Superiores de Tamaulipas</h3>
+          <span>Tampico, TAMPS</span>
+        </div>
+        <div class="flex justify-between text-gray-600">
+          <p>Bachillerato en Socioeconomicas</p>
+          <p>Mayo, 2021</p>
+        </div>
+        <ul class="list-disc ml-5 mt-2">
+          <li>GPA: 8.61/10.00</li>
+          <li>Cursos Relevantes: Contabilidad, Marketing, Filosofía</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold border-b-2 border-gray-300 mb-4">Experiencia Profesional</h2>
+      <div class="mb-6">
+        <div class="flex justify-between">
+          <h3 class="font-semibold">Transportes Bellavista</h3>
+          <span>Location</span>
+        </div>
+        <div class="flex justify-between text-gray-600">
+          <p>Administrador Suplente</p>
+          <p>2023 - Present</p>
+        </div>
+        <ul class="list-disc ml-5 mt-2">
+          <li>Atencion al cliente</li>
+          <li>Marketing Digital</li>
+          <li>Implementacion de sistemas con el objetivo de maximizar la eficiencia</li>
+        </ul>
+      </div>
+
+	  <div class="flex justify-between">
+          <h3 class="font-semibold">Pescadería Cascajal</h3>
+          <span>Location</span>
+        </div>
+        <div class="flex justify-between text-gray-600">
+          <p>Ayudante General</p>
+          <p>May 2021 - Abr 2023</p>
+        </div>
+        <ul class="list-disc ml-5 mt-2">
+          <li>Estrategias de venta</li>
+          <li>Gestion de inventarios</li>
+          <li>Manejo de empleados</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold border-b-2 border-gray-300 mb-4">Actividades Extracurriculares</h2>
+      <div class="mb-4">
+        <div class="flex justify-between">
+          <h3 class="font-semibold">Club de Boxeo</h3>
+          <span>Ene 2025 - Present</span>
+        </div>
+        <p class="italic">Miembro</p>
+        
+      </div>
+
+	  <div class="mb-4">
+        <div class="flex justify-between">
+          <h3 class="font-semibold">Parroquia Nuestra Señora del Santísimo Rosario</h3>
+          <span>May 2025 - Present</span>
+        </div>
+        <p class="italic">Miembro</p>
+
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold border-b-2 border-gray-300 mb-4">Habilidades</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <h3 class="font-semibold mb-2">Habilidades Tecnicas</h3>
+          <p>Microsoft Office Suite, Python, Java, SQL</p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Certificaciones</h3>
+          <p>TOEFL - B2, Microsoft Office Suite</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold border-b-2 border-gray-300 mb-4">Informacion adicional</h2>
+      <ul class="list-disc ml-5">
+        <li>Lenguajes: Inglés C1, Español (Nativo)</li>
+        <li>Intereses: Negocios, Economía, Tecnología, Mejora de Sistemas</li>
+      </ul>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  /* Professional CV Style */
+  :root {
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --border-color: #CCCCCC;
+    --section-spacing: 1.5rem;
+  }
+
+  main {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    color: var(--text-primary);
+    background-color: white;
+    max-width: 8.5in; /* Standard US Letter width */
+    margin: 0 auto;
+    padding: 1in; /* 1-inch margins */
+  }
+
+  /* Typography */
+  h1, h2, h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--text-primary);
+    margin: 0;
+    page-break-after: avoid;
+  }
+
+  h1 {
+    font-size: 18pt;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.25rem;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 12pt;
+    font-weight: bold;
+  }
+
+  /* Sections */
+  section {
+    margin-bottom: var(--section-spacing);
+    page-break-inside: avoid;
+  }
+
+  /* Header */
+  .cv-header {
+    text-align: center;
+    margin-bottom: var(--section-spacing);
+  }
+
+  .cv-header p {
+    color: var(--text-secondary);
+    font-size: 11pt;
+    line-height: 1.4;
+  }
+
+  /* Content */
+  p, li {
+    font-size: 11pt;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  ul {
+    margin: 0.5rem 0;
+    padding-left: 1.25rem;
+  }
+
+  ul li {
+    margin-bottom: 0.25rem;
+    list-style-type: disc;
+  }
+
+  /* Layout */
+  .flex {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .justify-between {
+    justify-content: space-between;
+  }
+
+  .grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Profile Image */
+  .profile-image-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1rem auto;
+  }
+
+  .profile-image-placeholder {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .profile-image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Print Styles */
+  @media print {
+    main {
+      margin: 0;
+      padding: 1in;
+    }
+
+    section {
+      page-break-inside: avoid;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--text-primary);
+    }
+  }
+
+  /* Dates and Location */
+  .text-gray-600 {
+    color: var(--text-secondary);
+    font-size: 11pt;
+  }
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media print {
+    main {
+      padding: 0;
+      max-width: none;
+    }
+
+    section {
+      page-break-inside: avoid;
+      box-shadow: none;
+    }
+
+    h2::after {
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+
+    .cv-header {
+      text-align: center;
+    }
+  }
+
+  /* Hover effects */
+  section:hover {
+    box-shadow: 0 4px 8px rgba(165, 28, 48, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+
+  /* Links styling */
+  a {
+    color: var(--harvard-crimson);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+
+  a:hover {
+    border-bottom-color: var(--harvard-crimson);
+  }
+
+  /* Container */
+  .container {
+    width: 100%;
+    max-width: 66rem;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  /* Profile Image Styles */
+  .profile-image-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .profile-image-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: var(--harvard-light-gray);
+    border: 2px solid var(--harvard-crimson);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .profile-image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
